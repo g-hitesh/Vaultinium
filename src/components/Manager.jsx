@@ -64,9 +64,9 @@ const Manager = () => {
                 <p className='text-[#d8b74a] text-lg text-center'>Your Password Manager</p>
                 <div className='text-white flex flex-col p-4 gap-8 items-center'>
                     <input value={form.site} onChange={handleChange} placeholder='Enter Website URL' className=' border-2 w-full border-[#e4cb7b] rounded-2xl px-4 py-1' type="text" name='site' />
-                    <div className="flex w-full flex-col md:flex-row justify-between gap-8">
-                        <input value={form.username} onChange={handleChange} placeholder='Enter Username' className=' border-2 border-[#e4cb7b] rounded-2xl px-4 py-1' type="text" name='username' />
-                        <div className="relative ">
+                    <div className="flex w-full flex-col md:flex-row justify-between gap-4">
+                        <input value={form.username} onChange={handleChange} placeholder='Enter Username' className='w-[45%] border-2 border-[#e4cb7b] rounded-2xl px-4 py-1' type="text" name='username' />
+                        <div className="relative w-[45%]">
                             <input value={form.password} onChange={handleChange} placeholder='Enter Password' className=' border-2 border-[#e4cb7b] rounded-2xl px-4 py-1 w-full' type={passType} name='password' />
                             <span onClick={showPass} className="absolute right-2 top-2 cursor-pointer">{showPassword ? <FaEye /> : <FaEyeSlash />}</span>
                         </div>
