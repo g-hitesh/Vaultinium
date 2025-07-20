@@ -8,7 +8,7 @@ const Navbar = () => {
                     <img src="/src/assets/logo.png" className="w-[200px]" alt="Vaultinium Logo" />
                 </a>
                 <div className="items-center justify-between flex w-auto order-1" id="navbar-language">
-                    <ul className="flex font-medium p-0 rounded-lg space-x-8 md:space-x-2 rtl:space-x-reverse flex-row mt-0 border-0">
+                    <ul className="flex font-medium p-0 rounded-lg space-x-2 rtl:space-x-reverse flex-row mt-0 border-0">
                         <li>
                             <a href="#home" className="block py-2 px-3 text-white hover:text-[#e4cb7b] rounded-sm bg-transparent p-0" aria-current="page">Home</a>
                         </li>
