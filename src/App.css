@@ -1,1 +1,19 @@
 @import "tailwindcss";
+
+.scrollbar-dark {
+  &::-webkit-scrollbar {
+    @apply w-2 h-2; /* Adjust width and height as needed */
+  }
+
+  &::-webkit-scrollbar-track {
+    @apply bg-gray-200 dark:bg-neutral-800; /* Customize track color */
+  }
+
+  &::-webkit-scrollbar-thumb {
+    @apply rounded bg-gray-400 dark:bg-neutral-700; /* Customize thumb color */
+  }
+
+  &::-webkit-scrollbar-thumb:hover {
+    @apply bg-gray-500 dark:bg-neutral-600; /* Customize thumb hover color */
+  }
+}
