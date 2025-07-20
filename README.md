@@ -1,12 +1,50 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Vaultinium
+*A Modern and Secure Password Manager*
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 📖 Overview
+Vaultinium is a **password manager** designed to store, retrieve, and manage user passwords with security and ease. Built using **React** for the frontend and **Node.js** for the backend. With a sleek UI powered by **Tailwind CSS**, it offers a smooth user experience.
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## ✨ Features
+- **Add, Update & Delete Password Entries**
+- **Responsive UI with Tailwind CSS**
+
+---
+
+## 🛠 Tech Stack
+**Frontend:** React, Tailwind CSS 
+**Backend:** Node.js   
+**Version Control:** Git & GitHub
+
+---
+
+## ⚙️ Installation
+### 1. Clone the Repository
+```bash
+git clone https://github.com/g-hitesh/Vaultinium.git
+cd Vaultinium
+```
+
+---
+
+## 🤝 Contributing
+1. Fork the repository  
+2. Create a feature branch  
+3. Commit your changes  
+4. Push to your branch  
+5. Open a pull request  
+
+---
+
+## 📜 License
+Licensed under the **MIT License**.
+
+---
+
+## Author
+**Hitesh Kumar**  
+[LinkedIn](https://www.linkedin.com/in/codehitesh) | [GitHub](https://github.com/g-hitesh)
