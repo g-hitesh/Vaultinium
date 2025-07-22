@@ -59,7 +59,7 @@ const Manager = () => {
     return (
         <>
             <div className="absolute top-0 z-[-2] h-screen w-screen bg-neutral-950 bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.3),rgba(255,255,255,0))]"></div>
-            <div className="mx-auto flex flex-col items-center  max-w-4xl min-h-[calc(100vh-61.39)] container mt-8 md:mt-0  md:px-0">
+            <div className="mx-auto flex flex-col items-center  md:max-w-4xl min-h-[calc(100vh-61.39)] container mt-8 md:mt-2  md:px-0">
                 <h1 className='text-4xl font-bold text-center text-[#e4cb7b]'>Vaultinium</h1>
                 <p className='text-[#d8b74a] text-lg text-center'>Your Password Manager</p>
                 <div className='text-white flex flex-col p-4 gap-8 items-center'>
@@ -80,7 +80,7 @@ const Manager = () => {
                     <caption className="p-5 w-56 md:w-[15vw] text-lg font-semibold text-left rtl:text-right text-[#e4cb7b] ">
                         Your Passwords
                     </caption>
-                    <div className="relative md:w-full w-96  h-[300px] overflow-x-auto overflow-y-auto shadow-md sm:rounded-lg scrollbar-dark">
+                    <div className="relative md:w-full w-[90vw]  h-[300px] overflow-x-auto overflow-y-auto md:shadow-md rounded-2xl scrollbar-dark">
                         {passwordArray.length === 0 && <div className='text-white py-5 text-center'>No Passwords to Display</div>}
                         {passwordArray.length != 0 &&
                             <table className="w-full text-sm rounded-sm text-left rtl:text-right text-gray-500 overflow-y-auto">
