@@ -59,15 +59,15 @@ const Manager = () => {
     return (
         <>
             <div className="absolute top-0 z-[-2] h-screen w-screen bg-neutral-950 bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.3),rgba(255,255,255,0))]"></div>
-            <div className="mx-auto  max-w-4xl min-h-[calc(100vh-61.39)] container px-40  md:px-0">
+            <div className="mx-auto flex flex-col items-center  max-w-4xl min-h-[calc(100vh-61.39)] container mt-8 md:mt-0  md:px-0">
                 <h1 className='text-4xl font-bold text-center text-[#e4cb7b]'>Vaultinium</h1>
                 <p className='text-[#d8b74a] text-lg text-center'>Your Password Manager</p>
                 <div className='text-white flex flex-col p-4 gap-8 items-center'>
                     <input value={form.site} onChange={handleChange} placeholder='Enter Website URL' className=' border-2 w-full border-[#e4cb7b] rounded-2xl px-4 py-1' type="text" name='site' />
-                    <div className="flex w-full flex-col md:flex-row justify-between gap-4">
-                        <input value={form.username} onChange={handleChange} placeholder='Enter Username' className='w-[45%] border-2 border-[#e4cb7b] rounded-2xl px-4 py-1' type="text" name='username' />
-                        <div className="relative w-[45%]">
-                            <input value={form.password} onChange={handleChange} placeholder='Enter Password' className=' border-2 border-[#e4cb7b] rounded-2xl px-4 py-1 w-full' type={passType} name='password' />
+                    <div className="flex  flex-col items-center md:flex-row md:justify-between gap-8 md:gap-5">
+                        <input value={form.username} onChange={handleChange} placeholder='Enter Username' className='w-full  md:w-[45%] border-2 border-[#e4cb7b] rounded-2xl px-4 py-1' type="text" name='username' />
+                        <div className="relative w-full md:w-[45%]">
+                            <input value={form.password} onChange={handleChange} placeholder='Enter Password' className=' border-2 border-[#e4cb7b] rounded-2xl px-4 py-1 w-full ' type={passType} name='password' />
                             <span onClick={showPass} className="absolute right-2 top-2 cursor-pointer">{showPassword ? <FaEye /> : <FaEyeSlash />}</span>
                         </div>
                     </div>
@@ -76,14 +76,14 @@ const Manager = () => {
                         <RiApps2AddFill />
                         Save Pass</button>
                 </div>
-                <div className="passwords  ">
-                    <caption className="p-5 w-[15vw] text-lg font-semibold text-left rtl:text-right text-[#e4cb7b] ">
+                <div className="passwords   ">
+                    <caption className="p-5 w-56 md:w-[15vw] text-lg font-semibold text-left rtl:text-right text-[#e4cb7b] ">
                         Your Passwords
                     </caption>
-                    <div className="relative h-[300px] overflow-x-auto overflow-y-auto shadow-md sm:rounded-lg scrollbar-dark">
+                    <div className="relative md:w-full w-96  h-[300px] overflow-x-auto overflow-y-auto shadow-md sm:rounded-lg scrollbar-dark">
                         {passwordArray.length === 0 && <div className='text-white py-5 text-center'>No Passwords to Display</div>}
                         {passwordArray.length != 0 &&
-                            <table className="w-full text-sm rounded-sm text-left rtl:text-right text-gray-500 overflow-y-scroll">
+                            <table className="w-full text-sm rounded-sm text-left rtl:text-right text-gray-500 overflow-y-auto">
                                 <thead className="text-xs text-gray-700 uppercase  bg-[#e4cb7b] ">
                                     <tr>
                                         <th scope="col" className="px-6 py-3">
